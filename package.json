@@ -1,0 +1,15 @@
+{
+  "name": "proyectofelipe",
+  "version": "0.0.1",
+  "description": "Primer ejercicio con tailwind",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -o ./dist/build.css --minify"
+  },
+  "author": "Coco77",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
