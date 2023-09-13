@@ -4,25 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box Model Flex</title>
+  <title>Box Model Grid</title>
   <link rel="stylesheet" href="/dist/output.css">
 </head>
 
 <body>
-  <div class="mx-auto bg-green-600 max-w container">
-    <header class="p-2 h-10 bg-red-300">
+  <div class="grid  grid-cols-4 mx-auto bg-green-600 max-w-3x1 container">
+    <header class="col-span-4 p-2 h-10 bg-red-300">
       Este es mi header
     </header>
     <!-- flex-row-reverse sirve para invertir el orden -->
-    <section class="flex  bg-purple-400">
-      <nav class=" w-1/4 bg-blue-400">
+
+      <nav class="h-32 bg-blue-400">
+        
         menú
       </nav>
-      <article class=" w-3/4 bg-orange-400">
+      <article class=" col-span-3 bg-orange-400">
         contenido de la sección
       </article>
-    </section>
-    <footer >
+
+    <footer class="col-span-4 bg-red-500">
       pie de página
     </footer>
   </div>
