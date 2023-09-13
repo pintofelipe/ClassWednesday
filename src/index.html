@@ -4,29 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box Model Grid</title>
+  <title>Tarjeta Presentación</title>
   <link rel="stylesheet" href="/dist/output.css">
 </head>
 
-<body>
-  <div class="grid  grid-cols-4 mx-auto bg-green-600 max-w-3x1 container">
-    <header class="col-span-4 p-2 h-10 bg-red-300">
-      Este es mi header
-    </header>
-    <!-- flex-row-reverse sirve para invertir el orden -->
+<body class="flex items-center justify-center h-screen bg-slate-300">
+  <div class="p-2 shadow-lg rounded w-[480px] bg-white">
+    <div class="text-right">
 
-      <nav class="h-32 bg-blue-400">
-        
-        menú
-      </nav>
-      <article class=" col-span-3 bg-orange-400">
-        contenido de la sección
-      </article>
+      <svg class="h-6 inline " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+      </svg>
+    </div>
+    <div class="relative mx-auto w-20">
+      <img class="rounded-full h-20 w-20"
+        src="https://media.licdn.com/dms/image/D4E03AQE72ePewxr9Rg/profile-displayphoto-shrink_800_800/0/1682260228509?e=2147483647&v=beta&t=rNudKzS24q3kit-1N8zi-XW7PeIdZT48GmPOUa1JpuQ"
+        alt="">
+      <div class="bottom-2 right-0 absolute flex justify-center items-center rounded-full h-4 w-4 bg-green-500">
+        <svg class="text-white w-3 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+        </svg>
 
-    <footer class="col-span-4 bg-red-500">
-      pie de página
-    </footer>
+      </div>
+    </div>
+
+    <h1 class="text-slate-700 mt-3 text-center">Felipe Pinto</h1>
+    <h3 class="text-center text-[10px] text-slate-400"> UX/UI designer</h3>
+    <div class="mt-8 grid grid-cols-3">
+      <div class="text-center">
+        <h6 class="text-[8px] uppercase text-slate-300">coco77</h6>
+        <h2>77</h2>
+      </div>
+      <div class="text-center">
+        <h6 class="text-[8px] uppercase text-slate-300">coco77</h6>
+        <h2>77</h2>
+      </div>
+      <div class="text-center">
+        <h6 class="text-[8px] uppercase text-slate-300">coco77</h6>
+        <h2>77</h2>
+      </div>
+
+    </div>
   </div>
+
 </body>
 
 </html>
