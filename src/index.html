@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body>
-    <h1 class="text-[15px] font-bold underline text-blue-600">
-        Hello world!!
-    </h1 >
 
-    <div class="duration-300 transition-colors hover:bg-blue-600 hover:cursor-pointer text-white bg-blue-500  inline-block mt-10 ml-10 py-1 px-2 rounded">
-        ¡Presioname!
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Float</title>
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body>
+  <div class="mx-auto bg-green-600 max-w container">
+    <header class="p-2 h-10 bg-red-300">
+      Este es mi header
+    </header>
+    <section class="bg-purple-400">
+      <nav class="float-left w-1/4 bg-blue-400">
+        menú
+      </nav>
+      <article class="float-left w-3/4 bg-orange-400">
+        contenido de la sección
+      </article>
+    </section>
+    <footer class="clear-both">
+      pie de página
+    </footer>
+  </div>
 </body>
+
 </html>
